@@ -1,0 +1,15 @@
+/* Events.css */
+.events {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .event-card {
+    background: white;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px gray;
+  }
+  

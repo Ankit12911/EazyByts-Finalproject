@@ -1,0 +1,33 @@
+/* Dashboard.css */
+.dashboard {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .booking-card {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .booking-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .booking-card button {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .booking-card button:hover {
+    background: #c82333;
+  }
+  

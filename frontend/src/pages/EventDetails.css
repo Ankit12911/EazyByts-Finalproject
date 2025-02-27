@@ -1,0 +1,37 @@
+/* EventDetails.css */
+.event-details {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .event-details img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .event-details h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .event-details p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .event-details button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .event-details button:hover {
+    background: #0056b3;
+  }
+  

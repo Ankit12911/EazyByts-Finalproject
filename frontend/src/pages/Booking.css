@@ -1,0 +1,30 @@
+/* Booking.css */
+.booking {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .booking h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .booking p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .booking button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .booking button:hover {
+    background: #218838;
+  }
+  

@@ -1,0 +1,180 @@
+/* 🌄 Full Page Background */
+body {
+  background-image: url("/public/images/background.jpeg"); /* ✅ Ensure the image is in public/ */
+  background-size: cover; /* ✅ Stretch to fit the screen */
+  background-position: center; /* ✅ Center the image */
+  background-repeat: no-repeat; /* ✅ No tiling */
+  background-attachment: fixed; /* ✅ Background stays while scrolling */
+  font-family: Arial, sans-serif;
+  color: white; /* ✅ Text color for contrast */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* ✅ Ensures full-screen height */
+  text-align: center;
+}
+
+
+/* 🔹 Navigation Bar */
+nav {
+  background-color: #007bff;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+nav button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* 📝 Form Styles */
+form {
+  background: white;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #218838;
+}
+
+/* 📅 Events List */
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.event-card {
+  background: white;
+  width: 300px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.event-card button {
+  background: #007bff;
+}
+
+.event-card button:hover {
+  background: #0056b3;
+}
+/* 🎭 Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ❌ Fade Out Animation */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* 📅 Event Cards */
+.event-card {
+  background: white;
+  width: 300px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out; /* ✅ Apply fade-in animation */
+}
+
+/* ✅ Booking Success Message */
+.success-message {
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px auto;
+  width: 300px;
+  text-align: center;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ❌ Canceling Event */
+.event-card.removing {
+  animation: fadeOut 0.5s ease-in-out;
+}
+/* 📸 Event Image Styling */
+.event-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+/* 📱 Responsive Background for Mobile Screens */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* ✅ Prevents issues on mobile */
+    background-size: auto 100vh; /* ✅ Adjusts height on smaller screens */
+  }
+}
+
+/* 📱 Further Optimization for Very Small Screens */
+@media (max-width: 480px) {
+  body {
+    background-size: contain; /* ✅ Keeps image visible without cropping */
+  }
+}
