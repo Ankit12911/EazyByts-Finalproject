@@ -15,8 +15,8 @@ const Events = () => {
       // ✅ Move default events inside useEffect to avoid warning
       const defaultEvents = [
         { id: 1, title: "Music Concert", date: "2025-06-15", price: 500, category: "Music", image: "/images/music concert.png" },
-        { id: 2, title: "Tech Conference", date: "2025-07-10", price: 1000, category: "Technology", image: "/images/conference.jpg" },
-        { id: 3, title: "Art Exhibition", date: "2025-08-20", price: 300, category: "Art", image: "/images/art.jpg" },
+        { id: 2, title: "Tech Conference", date: "2025-07-10", price: 1000, category: "Technology", image: "/images/tech.jpeg" },
+        { id: 3, title: "Art Exhibition", date: "2025-08-20", price: 300, category: "Art", image: "/images/art.jpeg" },
       ];
 
       setEvents(defaultEvents);
